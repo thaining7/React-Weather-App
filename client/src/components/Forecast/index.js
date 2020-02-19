@@ -3,20 +3,20 @@ import { ListItem } from "../List";
 import { Row, Col } from "../Grid";
 // import "./style.css";
 
-function Forecast({ locationName, locationRegion, locationCountry, currentTemp, currentCond }) {
+function Forecast({ location, temp}) {
     return (
         <ListItem>
             <Row className="flex-wrap-reverse">
                 <Col size="md-8">
-                    <h3 className="font-italic">Weather Forecast for {locationName}, {locationRegion}, {locationCountry}</h3>
+                    <h3 className="font-italic">Weather Forecast for {location}</h3>
                 </Col>
             </Row>
             <Row>
                 <Col size="md-6">
-                    <h4>Current Conditions</h4>
+                    <h4>Conditions</h4>
                     <ul>
-                        <li className="font-italic small">Temperature: {currentTemp} degrees Celcius</li>
-                        <li className="font-italic small">Conditions: {currentCond}</li>
+                        <li className="font-italic small">Temperature: {temp} degrees F</li>
+                        {/* <li className="font-italic small">Low Temperature: {low} degrees F</li> */}
                     </ul>
                 </Col>
             </Row>

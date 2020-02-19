@@ -29,7 +29,6 @@ class Home extends Component {
           weatherData: res.data
         })
       )
-      // .then(console.log("weatherData: " + weatherData))
       .catch(() =>
         this.setState({
           weatherData: [],
@@ -56,7 +55,7 @@ class Home extends Component {
             </Jumbotron>
           </Col>
           <Col size="md-12">
-            <Card title="Forecast Search" icon="far fa-book">
+            <Card title="Forecast Search" icon="fas fa-rainbow">
               <Form
                 handleInputChange={this.handleInputChange}
                 handleFormSubmit={this.handleFormSubmit}
@@ -72,13 +71,10 @@ class Home extends Component {
                 <List>
                   {this.state.weatherData.map(weather => (
                     <Forecast
-                      
-                      locationName={weather.location.name}
-                      locationRegion={weather.location.region}
-                      locationCountry={weather.location.country}
-                      currentTemp={weather.current.temp_f}
-                      currentCond={weather.current.condition.text}
-                      
+                      // key={weather.date}
+                      location={weather.location.name}
+                      temp={weather.current.temp_f}
+                      // low={weather.day.mintemp_f}
                     />
                   ))}
                 </List>
