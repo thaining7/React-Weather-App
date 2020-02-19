@@ -4,7 +4,7 @@ const axios = require("axios");
 module.exports = {
     findAll: function (req, res) {
         const { query: params } = req;
-        axios.get("http://api.weatherapi.com/v1/forecast.json?key=ba2ed03044634848bb2150838201402", { params })
+        axios.get("http://api.weatherapi.com/v1/forecast.json", { params })
             .then((results) => {
                 const data = [ results.data ];
                 res.json(data);
