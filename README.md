@@ -17,3 +17,7 @@ This app displays the current weather conditions and three day forecast for a lo
 ## API Reference
 
 https://www.weatherapi.com/
+
+## How to Use
+
+* Enter a zip code in the search box to view the location's current weather conditions and three day forecast
