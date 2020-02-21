@@ -4,9 +4,9 @@ function Footer() {
     return (
         <footer>
             <hr />
-            <p className="pull-right">
+            <a href="https://github.com/thaining7/React-Weather-App" className="pull-left" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github" />Welcome | React Weather App
-      </p>
+      </a>
         </footer>
     );
 }

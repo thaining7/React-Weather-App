@@ -82,6 +82,7 @@ class Home extends Component {
                       humidity={weather.current.humidity}
                       uvIndex={weather.current.uv}
                       condition={weather.current.condition.text}
+                      icon={weather.current.condition.icon}
                     />
                     
                   ))}
@@ -90,8 +91,13 @@ class Home extends Component {
                       key={forecast.date}
                       date={forecast.date}
                       lowTemp={forecast.day.mintemp_f}
-                      highTemp={forecast.day.hightemp_f}
+                      highTemp={forecast.day.maxtemp_f}
+                      uvIndex={forecast.day.uv}
+                      humidity={forecast.day.avghumidity}
+                      sunrise={forecast.astro.sunrise}
+                      sunset={forecast.astro.sunset}
                       condition={forecast.day.condition.text}
+                      icon={forecast.day.condition.icon}
                     />
                   ))}
                 </List>
