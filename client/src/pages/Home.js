@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Jumbotron from "../components/Jumbotron";
 import Card from "../components/Card";
 import Form from "../components/Form";
+import Current from "../components/Current";
 import Forecast from "../components/Forecast";
 import Footer from "../components/Footer";
 import API from "../utils/API";
@@ -51,7 +52,7 @@ class Home extends Component {
                 <h1 className="text-center">
                   <strong>React Weather App</strong>
                 </h1>
-                <h2 className="text-center">Find the weather forecast for any location</h2>
+                <h2 className="text-center">Find the weather for any location</h2>
             </Jumbotron>
           </Col>
           <Col size="md-12">
@@ -68,13 +69,29 @@ class Home extends Component {
           <Col size="md-12">
             <Card title="Results">
               {this.state.weatherData.length ? (
+                
                 <List>
                   {this.state.weatherData.map(weather => (
+                    
+                    <Current
+                      key={weather.location.name}
+                      locationName={weather.location.name}
+                      locationRegion={weather.location.region}
+                      locationCountry={weather.location.country}
+                      currentTemp={weather.current.temp_f}
+                      humidity={weather.current.humidity}
+                      uvIndex={weather.current.uv}
+                      condition={weather.current.condition.text}
+                    />
+                    
+                  ))}
+                  {this.state.weatherData[0].forecast.forecastday.map(forecast => (
                     <Forecast
-                      // key={weather.date}
-                      location={weather.location.name}
-                      temp={weather.current.temp_f}
-                      // low={weather.day.mintemp_f}
+                      key={forecast.date}
+                      date={forecast.date}
+                      lowTemp={forecast.day.mintemp_f}
+                      highTemp={forecast.day.hightemp_f}
+                      condition={forecast.day.condition.text}
                     />
                   ))}
                 </List>

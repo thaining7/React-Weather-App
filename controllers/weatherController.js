@@ -8,7 +8,7 @@ module.exports = {
         //     .then((results) => {
         //         const data = [ results.data ];
         //         res.json(data);
-        //         // res data had to be nested in array!!!
+        //         // res data had to be nested in object!!!
         //         console.log(data);
         //     })
         //     .catch(err => console.log("It's throwing this error: " + err))

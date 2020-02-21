@@ -12,7 +12,7 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
                     id="Title"
                     type="text"
                     value={q}
-                    placeholder="Enter a Location"
+                    placeholder="Enter a Zip Code"
                     name="q"
                     onChange={handleInputChange}
                     required
