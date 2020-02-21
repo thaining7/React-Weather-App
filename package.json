@@ -1,7 +1,7 @@
 {
   "name": "node-express-react-weatherapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "A weather app built with node, express and react",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
