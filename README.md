@@ -46,8 +46,10 @@ export default {
 
 ## Installation
 
+* First, obtain an API key by signing up at https://www.weatherapi.com/
 * Clone this repository to your local machine
 * Using the command line, cd to the app's directory
+* Create a '.env' file and add the following: API_KEY='your-API-key-here'
 * Run 'npm install' to install the dependencies
 * Run 'npm start' to start the application
 
