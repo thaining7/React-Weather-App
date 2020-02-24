@@ -8,6 +8,10 @@ https://node-express-react-weather.herokuapp.com/
 
 This app displays the current weather conditions and three day forecast for a location of your choice
 
+## Build Status
+
+[![Build Status](https://travis-ci.com/thaining7/React-Weather-App.svg?branch=master)](https://travis-ci.com/thaining7/React-Weather-App)
+
 ## Code Style
 
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/standard/semistandard)
