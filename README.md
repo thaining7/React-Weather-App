@@ -59,4 +59,4 @@ https://www.weatherapi.com/
 
 ## How to Use
 
-* Enter a zip code in the search box to view the location's current weather conditions and three day forecast
+* Enter a valid zip code in the search box to view the location's current weather conditions and three day forecast
