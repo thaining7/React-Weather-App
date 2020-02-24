@@ -12,6 +12,7 @@ module.exports = {
       .then(results => {
         const data = [results.data];
         res.json(data);
+        // console.log(results)
         console.log(data);
       })
       .catch(err => console.log(err));

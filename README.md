@@ -16,6 +16,10 @@ This app displays the current weather conditions and three day forecast for a lo
 
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/standard/semistandard)
 
+## Screenshot
+
+![App Screenshot](/client/public/assets/images.Screenshot.png)
+
 ## Tech Used
 
 * Node
