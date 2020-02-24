@@ -18,7 +18,7 @@ This app displays the current weather conditions and three day forecast for a lo
 
 ## Screenshot
 
-![App Screenshot](/client/public/assets/images.Screenshot.png)
+![App Screenshot](/client/public/assets/images/Screenshot.png)
 
 ## Tech Used
 
