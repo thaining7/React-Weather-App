@@ -8,6 +8,10 @@ https://node-express-react-weather.herokuapp.com/
 
 This app displays the current weather conditions and three day forecast for a location of your choice
 
+## Code Style
+
+[![js-semistandard-style](https://cdn.rawgit.com/standard/semistandard/master/badge.svg)](https://github.com/standard/semistandard)
+
 ## Tech Used
 
 * Node
