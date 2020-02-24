@@ -25,6 +25,21 @@ This app displays the current weather conditions and three day forecast for a lo
 * Axios
 * Weather API
 
+## Code Example
+
+Exporting the API module to be used on our React Home page. "qv" is the query value taken in from the search component while "q" is the query parameter required by the API. "params" is the Axios config property required to define the query parameters.
+
+```
+...
+export default {
+  // Gets data from the Weather API via the server route
+  getWeather: function (qv) {
+    return axios.get('/api/weather', { params: { q: + qv, days: '3' } });
+  }
+
+};
+```
+
 ## API Reference
 
 https://www.weatherapi.com/
