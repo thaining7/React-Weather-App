@@ -44,6 +44,15 @@ export default {
 };
 ```
 
+## Installation
+
+* Clone this repository to your local machine
+* Using the command line, cd to the app's directory
+* Run 'npm install' to install the dependencies
+* Run 'npm start' to start the application
+
+* This app requires Node.js and NPM to be installed on your machine. If you do not have them installed, see this guide for detailed installation instructions: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment
+
 ## API Reference
 
 https://www.weatherapi.com/
