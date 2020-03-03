@@ -13,7 +13,7 @@ class Home extends Component {
   state = {
     weatherData: [],
     q: "",
-    message: "Enter a zip code"
+    message: "Enter a zip code or city"
   };
 
   handleInputChange = event => {
