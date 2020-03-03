@@ -12,7 +12,7 @@ import { List } from "../components/List";
 class Home extends Component {
   state = {
     weatherData: [],
-    q: "",
+    query: "",
     message: "Enter a zip code or city"
   };
 
@@ -24,7 +24,7 @@ class Home extends Component {
   };
 
   getWeather = () => {
-    API.getWeather(this.state.q)
+    API.getWeather(this.state.query)
       .then(res =>
         this.setState({
           weatherData: res.data
@@ -62,7 +62,7 @@ class Home extends Component {
               <Form
                 handleInputChange={this.handleInputChange}
                 handleFormSubmit={this.handleFormSubmit}
-                q={this.state.q}
+                query={this.state.query}
               />
             </Card>
           </Col>
