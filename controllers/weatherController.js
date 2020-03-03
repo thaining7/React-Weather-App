@@ -15,6 +15,6 @@ module.exports = {
         // console.log(results)
         console.log(data);
       })
-      .catch(error => console.log(error.response.status));
+      .catch(error => console.log(error.response.status)); // log error.response.status for security
   }
 };

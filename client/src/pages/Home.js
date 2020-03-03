@@ -31,6 +31,7 @@ class Home extends Component {
         })
       )
       .catch((error) =>
+        // added error to catch to display proper message
         console.log(error),
         this.setState({
           weatherData: [],
