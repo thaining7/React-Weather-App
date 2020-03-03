@@ -57,9 +57,9 @@ export default {
 
 ## API Reference
 
-http://expressjs.com/
-https://www.npmjs.com/package/axios
-https://www.weatherapi.com/
+* http://expressjs.com/
+* https://www.npmjs.com/package/axios
+* https://www.weatherapi.com/
 
 ## How to Use
 
