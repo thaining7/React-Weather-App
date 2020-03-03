@@ -38,7 +38,7 @@ Exporting the API module to be used on our React Home page. "qv" is the query va
 export default {
   // Gets data from the Weather API via the server route
   getWeather: function (qv) {
-    return axios.get('/api/weather', { params: { q: + qv, days: '3' } });
+    return axios.get('/api/weather', { params: { q: qv, days: '3' } });
   }
 
 };
