@@ -30,7 +30,8 @@ class Home extends Component {
           weatherData: res.data
         })
       )
-      .catch(() =>
+      .catch((error) =>
+        console.log(error),
         this.setState({
           weatherData: [],
           message: "No Forecast Found, Try a Different Location"
@@ -49,10 +50,10 @@ class Home extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-                <h1 className="text-center">
-                  <strong>React Weather App</strong>
-                </h1>
-                <h2 className="text-center">Find the weather for any location</h2>
+              <h1 className="text-center">
+                <strong>React Weather App</strong>
+              </h1>
+              <h2 className="text-center">Find the weather for any location</h2>
             </Jumbotron>
           </Col>
           <Col size="md-12">
@@ -69,10 +70,10 @@ class Home extends Component {
           <Col size="md-12">
             <Card title="Results">
               {this.state.weatherData.length ? (
-                
+
                 <List>
                   {this.state.weatherData.map(weather => (
-                    
+
                     <Current
                       key={weather.location.name}
                       locationName={weather.location.name}
@@ -84,7 +85,7 @@ class Home extends Component {
                       condition={weather.current.condition.text}
                       icon={weather.current.condition.icon}
                     />
-                    
+
                   ))}
                   {this.state.weatherData[0].forecast.forecastday.map(forecast => (
                     <Forecast
