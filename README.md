@@ -44,6 +44,40 @@ export default {
 };
 ```
 
+Server route that calls findAll module
+
+```
+...
+router
+  .route('/')
+  .get(weatherController.findAll);
+
+module.exports = router;
+```
+
+Controller that pings API
+
+```
+...
+module.exports = {
+  findAll: function (req, res) {
+    const { query: params } = req; // assigning axios params to express req.query
+    axios({
+      method: 'get',
+      url: 'http://api.weatherapi.com/v1/forecast.json?key=' + process.env.API_KEY,
+      params
+    })
+      .then(results => {
+        const data = [results.data];
+        res.json(data);
+        // console.log(results)
+        console.log(data);
+      })
+      .catch(error => console.log(error.response.status)); // log error.response.status for security
+  }
+};
+```
+
 ## Installation
 
 * First, obtain an API key by signing up at https://www.weatherapi.com/
