@@ -44,7 +44,7 @@ export default {
 };
 ```
 
-Server route that calls findAll module
+Server route that calls the findAll module:
 
 ```
 ...
@@ -55,7 +55,7 @@ router
 module.exports = router;
 ```
 
-Controller that pings API
+findAll module that pings the API:
 
 ```
 ...
