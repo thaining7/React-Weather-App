@@ -15,6 +15,11 @@ module.exports = {
         // console.log(results)
         console.log(data);
       })
-      .catch(error => console.log(error.response.status)); // log error.response.status for security
-  }
+      // changed error handling on this catch to allow react to render correct state
+      .catch(error => {
+        const errData = error.response.status;
+        res.send(errData);
+        console.log(errData);
+      }) // log error.response.status for security
+    }
 };

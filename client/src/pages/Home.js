@@ -27,12 +27,11 @@ class Home extends Component {
     API.getWeather(this.state.query)
       .then(res =>
         this.setState({
-          weatherData: res.data
+          weatherData: res.data,
+          message: "Success!"
         })
       )
-      .catch((error) =>
-        // added error to catch to display proper message
-        console.log(error),
+      .catch(() =>
         this.setState({
           weatherData: [],
           message: "No Forecast Found, Try a Different Location"
