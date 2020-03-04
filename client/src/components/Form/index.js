@@ -12,7 +12,7 @@ function Form ({ query, handleInputChange, handleFormSubmit }) {
           id='Title'
           type='text'
           value={query}
-          placeholder='Enter a Zip Code'
+          placeholder='Enter a zip code or city'
           name='query'
           onChange={handleInputChange}
           required
